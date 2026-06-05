@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="U Station Crypto｜香港尖沙咀實體加密貨幣服務中心，提供穩定幣、BTC、ETH 與 HKD、USD、EUR 等法幣之間的線下諮詢、回收及出售服務。" />
+  <meta name="keywords" content="U Station Crypto, U站加密貨幣, 香港加密貨幣, 尖沙咀OTC, USDT, BTC, ETH, HKD, USD, EUR" />
+  <title>U Station Crypto｜U站加密貨幣</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="U Station Crypto Home">
+        <span class="brand-mark">U</span>
+        <span>
+          <strong>U Station Crypto</strong>
+          <small>U站加密貨幣</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">服務</a>
+        <a href="#market">行情</a>
+        <a href="#process">流程</a>
+        <a href="#location">門店</a>
+        <a href="#contact">聯絡</a>
+        <a class="nav-cta" href="#contact">立即諮詢</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hong Kong · Tsim Sha Tsui · Physical Store</p>
+          <h1>香港尖沙咀實體<br><span>加密貨幣服務中心</span></h1>
+          <p class="hero-lead">
+            U Station Crypto 位於尖沙咀核心商圈，為客戶提供穩定幣、BTC、ETH 與 HKD、USD、EUR 等多種法幣之間的線下諮詢、回收及出售服務。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">預約到店</a>
+            <a class="btn btn-secondary" href="#services">查看服務</a>
+          </div>
+          <div class="trust-row" aria-label="service highlights">
+            <span>實體門店</span>
+            <span>面對面確認</span>
+            <span>多幣種支持</span>
+            <span>商務合作</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" id="market" aria-label="Market price cards">
+          <div class="card-header">
+            <div>
+              <p class="eyebrow">Live Market</p>
+              <h2>實時市場參考價</h2>
+            </div>
+            <span class="live-dot">LIVE</span>
+          </div>
+
+          <div class="price-list">
+            <article class="price-card">
+              <div>
+                <strong>Bitcoin</strong>
+                <span>BTC / USD</span>
+              </div>
+              <div class="price-value" id="btc-price">Loading...</div>
+            </article>
+            <article class="price-card">
+              <div>
+                <strong>Ethereum</strong>
+                <span>ETH / USD</span>
+              </div>
+              <div class="price-value" id="eth-price">Loading...</div>
+            </article>
+            <article class="price-card">
+              <div>
+                <strong>Tether</strong>
+                <span>USDT / USD</span>
+              </div>
+              <div class="price-value" id="usdt-price">Loading...</div>
+            </article>
+          </div>
+
+          <p class="market-note">
+            價格資料由第三方公開行情接口提供，僅供參考；實際交易價格以門店現場確認報價為準。
+          </p>
+          <p class="updated" id="updated-time">更新中...</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section logos-strip" aria-label="Supported assets">
+      <div class="container coin-strip">
+        <span>USDT</span>
+        <span>USDC</span>
+        <span>BTC</span>
+        <span>ETH</span>
+        <span>HKD</span>
+        <span>USD</span>
+        <span>EUR</span>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>核心服務</h2>
+          <p>面向個人、商務客戶及跨境業務需求，提供清晰、透明、可溝通的線下服務。</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="icon">01</span>
+            <h3>加密貨幣回收</h3>
+            <p>支持 USDT、USDC、BTC、ETH 等主流數字資產回收，到店面談、現場確認、報價透明。</p>
+          </article>
+          <article class="service-card">
+            <span class="icon">02</span>
+            <h3>加密貨幣出售</h3>
+            <p>為有數字資產需求的客戶提供穩定幣及主流加密貨幣出售服務，適合長期合作與商務需求。</p>
+          </article>
+          <article class="service-card">
+            <span class="icon">03</span>
+            <h3>U 換外幣</h3>
+            <p>支持穩定幣兌換 HKD、USD、EUR 等多種法幣，適合跨境商務、外貿及旅行資金安排。</p>
+          </article>
+          <article class="service-card">
+            <span class="icon">04</span>
+            <h3>法幣換穩定幣</h3>
+            <p>支持合規來源的法幣兌換穩定幣，交易前需完成身份、用途及資金來源確認。</p>
+          </article>
+          <article class="service-card wide">
+            <span class="icon">05</span>
+            <h3>商務合作通道</h3>
+            <p>目前已接入 HashKey 相關通道及 Epay 相關通道，可根據客戶業務需求提供長期、穩定、可溝通的商務合作方案。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="process">
+      <div class="container process-grid">
+        <div>
+          <p class="eyebrow">How It Works</p>
+          <h2>到店流程</h2>
+          <p class="muted">為保障雙方安全及合規要求，建議提前預約，現場確認報價、身份及交易用途。</p>
+        </div>
+        <div class="steps">
+          <div class="step"><span>1</span><p>通過微信、WhatsApp、Telegram 或郵箱聯絡預約</p></div>
+          <div class="step"><span>2</span><p>確認服務類型、幣種、金額範圍及到店時間</p></div>
+          <div class="step"><span>3</span><p>到尖沙咀華源大廈地鋪 16A 現場面談</p></div>
+          <div class="step"><span>4</span><p>完成身份、用途、資金來源確認後執行交易</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>為什麼選擇 U Station Crypto</h2>
+          <p>我們更重視長期合作、清晰溝通和線下可信任感。網站只作服務介紹與預約入口，實際交易需以門店現場審核與確認為準。</p>
+        </div>
+        <div class="feature-list">
+          <div><strong>香港實體門店</strong><span>尖沙咀核心地段，面對面溝通更安心。</span></div>
+          <div><strong>多幣種服務</strong><span>支持主流數字資產與多種常用法幣。</span></div>
+          <div><strong>清晰報價</strong><span>行情公開參考，交易前現場確認最終報價。</span></div>
+          <div><strong>商務合作</strong><span>適合跨境商務、外貿及長期合作需求。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section" id="location">
+      <div class="container location-grid">
+        <div>
+          <p class="eyebrow">Location</p>
+          <h2>門店地址</h2>
+          <p class="address">
+            <strong>U站加密貨幣 / U Station Crypto</strong><br>
+            香港尖沙咀華源大廈地鋪 16A<br>
+            尖沙咀 C2 出口附近
+          </p>
+          <p class="muted">建議到店前先聯絡客服預約，以便安排服務時間及確認當日報價。</p>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%99%E6%B8%AF%E5%B0%96%E6%B2%99%E5%92%80%E8%8F%AF%E6%BA%90%E5%A4%A7%E5%BB%88%E5%9C%B0%E9%8B%AA16A">Google 地圖導航</a>
+        </div>
+        <div class="map-card">
+          <iframe title="U Station Crypto Google Map" src="https://www.google.com/maps?q=%E9%A6%99%E6%B8%AF%E5%B0%96%E6%B2%99%E5%92%80%E8%8F%AF%E6%BA%90%E5%A4%A7%E5%BB%88%E5%9C%B0%E9%8B%AA16A&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>聯絡與商務合作</h2>
+          <p>把你的微信、WhatsApp、Telegram 二維碼圖片替換到 images 文件夾，即可變成正式版。</p>
+        </div>
+
+        <div class="contact-grid">
+          <article class="qr-card">
+            <img src="images/wechat-qr.png" alt="WeChat QR code placeholder" onerror="this.src='images/qr-placeholder.svg'">
+            <h3>微信</h3>
+            <p>掃碼添加微信諮詢</p>
+          </article>
+          <article class="qr-card">
+            <img src="images/whatsapp-qr.png" alt="WhatsApp QR code placeholder" onerror="this.src='images/qr-placeholder.svg'">
+            <h3>WhatsApp</h3>
+            <p>掃碼 WhatsApp 聯絡</p>
+          </article>
+          <article class="qr-card">
+            <img src="images/telegram-qr.png" alt="Telegram QR code placeholder" onerror="this.src='images/qr-placeholder.svg'">
+            <h3>Telegram</h3>
+            <p>掃碼 Telegram 聯絡</p>
+          </article>
+        </div>
+
+        <div class="email-card">
+          <span>Business Email</span>
+          <a href="mailto:business@ustationcrypto.com">business@ustationcrypto.com</a>
+          <p>正式上線前，請把這個郵箱改成你的真實商務合作郵箱。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compliance-section" id="compliance">
+      <div class="container compliance-card">
+        <p class="eyebrow">Compliance Notice</p>
+        <h2>合規提示</h2>
+        <p>
+          U Station Crypto 僅為客戶提供數字資產相關諮詢、線下兌換及商務合作服務。所有交易需基於真實身份、合法資金來源及合規用途。我們不接受任何涉及詐騙、洗錢、賭博、非法集資、地下錢莊或其他違法活動的資金或交易。
+        </p>
+        <p>
+          本網站展示的行情與服務說明僅供參考，不構成投資建議、金融建議或任何收益承諾。實際服務範圍、報價及交易安排以門店現場審核和確認結果為準。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>U Station Crypto</strong>
+        <p>U站加密貨幣｜香港尖沙咀實體服務中心</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">服務</a>
+        <a href="#market">行情</a>
+        <a href="#location">地址</a>
+        <a href="#contact">聯絡</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> U Station Crypto. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
