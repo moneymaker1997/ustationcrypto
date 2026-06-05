@@ -114,8 +114,8 @@ h3 { font-size: 20px; margin-bottom: 10px; }
 .price-list { display: grid; gap: 14px; }
 .price-card {
   padding: 18px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(120px, 0.8fr) minmax(260px, 1.8fr);
   align-items: center;
   gap: 16px;
   border-radius: 18px;
@@ -124,7 +124,20 @@ h3 { font-size: 20px; margin-bottom: 10px; }
 }
 .price-card strong { display: block; }
 .price-card span { color: var(--muted); font-size: 13px; }
-.price-value { font-size: 22px; font-weight: 900; color: var(--gold); white-space: nowrap; }
+.coin-info strong { color: var(--text); font-size: 18px; }
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  text-align: right;
+}
+.quote-grid div {
+  padding-left: 10px;
+  border-left: 1px solid rgba(255,255,255,0.10);
+}
+.price-value { font-size: 20px; font-weight: 900; color: var(--gold); white-space: nowrap; }
+.quote-buy { color: var(--cyan); }
+.quote-sell { color: #f3c76a; }
 .market-note, .updated, .muted { color: var(--muted); }
 .market-note { margin: 18px 0 8px; font-size: 13px; }
 .updated { margin: 0; font-size: 12px; }
@@ -202,6 +215,7 @@ h3 { font-size: 20px; margin-bottom: 10px; }
   .hero { padding-top: 78px; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card.wide { grid-column: auto; }
-  .price-card { align-items: flex-start; flex-direction: column; }
+  .price-card { grid-template-columns: 1fr; align-items: flex-start; }
+  .quote-grid { width: 100%; text-align: left; }
   .footer-grid { align-items: flex-start; flex-direction: column; }
 }

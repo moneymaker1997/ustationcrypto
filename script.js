@@ -24,10 +24,31 @@ const formatUsd = (value) => {
   }).format(value);
 };
 
+function updateQuote(symbol, livePrice) {
+  const liveEl = document.getElementById(`${symbol}-price`);
+  const buyEl = document.getElementById(`${symbol}-buy-price`);
+  const sellEl = document.getElementById(`${symbol}-sell-price`);
+
+  if (typeof livePrice !== 'number') {
+    liveEl.textContent = 'N/A';
+    buyEl.textContent = 'N/A';
+    sellEl.textContent = 'N/A';
+    return;
+  }
+
+  // 按你的定義：買入價 = 實時價 + 3%，賣出價 = 實時價 - 3%
+  liveEl.textContent = formatUsd(livePrice);
+  buyEl.textContent = formatUsd(livePrice * 1.03);
+  sellEl.textContent = formatUsd(livePrice * 0.97);
+}
+
+function setPriceError(symbol) {
+  document.getElementById(`${symbol}-price`).textContent = '暫不可用';
+  document.getElementById(`${symbol}-buy-price`).textContent = '暫不可用';
+  document.getElementById(`${symbol}-sell-price`).textContent = '暫不可用';
+}
+
 async function loadPrices() {
-  const btc = document.getElementById('btc-price');
-  const eth = document.getElementById('eth-price');
-  const usdt = document.getElementById('usdt-price');
   const updated = document.getElementById('updated-time');
 
   try {
@@ -36,14 +57,14 @@ async function loadPrices() {
     if (!response.ok) throw new Error('Price API unavailable');
 
     const data = await response.json();
-    btc.textContent = formatUsd(data.bitcoin?.usd);
-    eth.textContent = formatUsd(data.ethereum?.usd);
-    usdt.textContent = formatUsd(data.tether?.usd);
+    updateQuote('btc', data.bitcoin?.usd);
+    updateQuote('eth', data.ethereum?.usd);
+    updateQuote('usdt', data.tether?.usd);
     updated.textContent = `Last updated: ${new Date().toLocaleString()}`;
   } catch (error) {
-    btc.textContent = '暫不可用';
-    eth.textContent = '暫不可用';
-    usdt.textContent = '暫不可用';
+    setPriceError('btc');
+    setPriceError('eth');
+    setPriceError('usdt');
     updated.textContent = '行情接口暫時無法連接，請稍後刷新。';
     console.warn(error);
   }
