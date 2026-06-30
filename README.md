@@ -10,3 +10,16 @@ U Station Crypto Website V6
 
 部署：
 把 index.html、style.css、script.js、images、README.md 上傳到 GitHub 倉庫最外層即可。
+
+
+V7 更新：
+- 將「資訊文章」統一改為「U站筆記」。
+- 新增「客戶案例」頁 testimonials.html。
+- 首頁新增 3 條匿名化客戶案例預覽。
+- 導航列與頁尾新增「客戶案例」。
+- 客戶案例內容採用匿名化 / 示例案例表述，避免誤導為未授權真實評價。
+
+部署：
+- 根目錄文件直接上傳。
+- blog/index.html 需放在 blog 資料夾內。
+- 圖片需放在 images 資料夾內。
