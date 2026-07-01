@@ -75,3 +75,19 @@ loadPrices();
 setInterval(loadPrices, 60000);
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// V9: copy customer feedback template
+const copyTemplateButtons = document.querySelectorAll('[data-copy-template="feedback"]');
+copyTemplateButtons.forEach((button) => {
+  button.addEventListener('click', async () => {
+    const template = document.getElementById('feedback-template-text')?.innerText || '';
+    try {
+      await navigator.clipboard.writeText(template);
+      const original = button.textContent;
+      button.textContent = '已複製格式';
+      setTimeout(() => { button.textContent = original; }, 1800);
+    } catch (error) {
+      alert('複製失敗，請手動選取格式文字。');
+    }
+  });
+});

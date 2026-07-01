@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="U Station Crypto 客戶案例與匿名化服務體驗分享。" />
+  <meta name="description" content="U Station Crypto 客戶案例、匿名化服務反饋與提交評價入口。" />
   <title>客戶案例｜U Station Crypto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
-<body>
+<body class="testimonial-page">
   <div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div><div class="bg-grid"></div>
-  <header class="site-header">
+  <header class="site-header testimonial-header">
     <div class="container nav-row">
       <a class="brand" href="index.html">
         <span class="brand-mark">U</span>
@@ -22,7 +22,7 @@
       <nav class="main-nav">
         <a href="about.html">關於我們</a>
         <a href="services.html">服務內容</a>
-        <a href="testimonials.html">客戶案例</a>
+        <a class="active" href="testimonials.html">客戶案例</a>
         <a href="blog/">U站筆記</a>
         <a href="faq.html">常見問題</a>
         <a href="compliance.html">合規說明</a>
@@ -31,42 +31,141 @@
       </nav>
     </div>
   </header>
+
   <main>
-    <section class="page-hero section">
-      <div class="container page-hero-inner glass-card">
-        <p class="eyebrow">Client Stories</p>
-        <h1>客戶案例</h1>
-        <p class="page-lead">整理到店諮詢、流程溝通與服務體驗。以下內容為客戶授權反饋或匿名化服務案例整理，僅用於展示服務流程與客戶感受。</p>
+    <section class="case-visual-hero">
+      <div class="case-hero-bg"></div>
+      <div class="container case-hero-split">
+        <div class="case-hero-copy">
+          <p class="eyebrow">Service Cases</p>
+          <h1>客戶案例</h1>
+          <p>以下為經授權的客戶回饋或匿名化服務案例，用以展示我們的服務流程、溝通方式與文件準備指引。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#submit-feedback">提交客戶評價</a>
+            <a class="btn btn-secondary" href="contact.html">先聯絡客服</a>
+          </div>
+        </div>
+        <div class="case-hero-store glass-card">
+          <img src="images/storefront.jpg" alt="U Station Crypto 尖沙咀門店">
+        </div>
       </div>
     </section>
 
-    <section class="section compact-section">
-      <div class="container testimonial-grid">
-        <article class="glass-card testimonial-card">
-          <div class="testimonial-top"><span>匿名客戶｜香港</span><strong>HKD 10萬以內</strong></div>
-          <h2>第一次到店先了解流程，感覺比較清楚</h2>
-          <p>到店前先透過 WhatsApp 溝通幣種、金額與用途。現場會先確認資料和風險提示，再說明後續流程，整體比較清楚，適合第一次了解服務的客戶。</p>
-          <div class="testimonial-meta"><span>服務類型：多幣種諮詢</span><span>2026-07-01</span></div>
-        </article>
-        <article class="glass-card testimonial-card">
-          <div class="testimonial-top"><span>匿名商務客戶｜外貿場景</span><strong>企業諮詢</strong></div>
-          <h2>先看背景資料，再判斷能否安排</h2>
-          <p>我們主要是想了解跨境收款和結算安排。U站會先問公司背景、合同、發票、資金用途等資料，不是直接報價，這點對商務客戶比較重要。</p>
-          <div class="testimonial-meta"><span>服務類型：商務合作諮詢</span><span>2026-06-28</span></div>
-        </article>
-        <article class="glass-card testimonial-card">
-          <div class="testimonial-top"><span>匿名客戶｜深圳 / 香港</span><strong>HKD 10萬 - 50萬</strong></div>
-          <h2>現場溝通比純線上更放心</h2>
-          <p>因為涉及金額和用途說明，我們更希望面對面確認。門店在尖沙咀，先預約再到店，現場會說明當日報價、資料要求和注意事項。</p>
-          <div class="testimonial-meta"><span>服務類型：線下到店諮詢</span><span>2026-06-25</span></div>
-        </article>
-        <article class="glass-card testimonial-note">
-          <h2>重要說明</h2>
-          <p>本頁內容為客戶授權反饋或匿名化服務案例整理，部分內容已做隱私處理，不代表任何投資建議、收益承諾、交易保證或金融產品推薦。實際服務以個案審核、資金來源確認、現場報價及合規要求為準。</p>
+    <section class="section case-wall-section">
+      <div class="container case-wall-grid">
+        <aside class="case-principles glass-card">
+          <div class="principle-head">
+            <span class="principle-icon">◇</span>
+            <h2>案例展示原則</h2>
+          </div>
+          <div class="principle-list">
+            <div class="principle-item">
+              <span>01</span>
+              <div><strong>保護客戶私隱</strong><p>所有案例均經匿名化處理，不公開任何個人資料。</p></div>
+            </div>
+            <div class="principle-item">
+              <span>02</span>
+              <div><strong>不公開具體金額</strong><p>案例僅列出金額區間，不展示真實交易金額。</p></div>
+            </div>
+            <div class="principle-item">
+              <span>03</span>
+              <div><strong>不作收益保證</strong><p>我們不作任何收益、回報或價格走勢的保證。</p></div>
+            </div>
+            <div class="principle-item">
+              <span>04</span>
+              <div><strong>發布前已匿名化處理</strong><p>案例內容於發布前已移除可識別資訊。</p></div>
+            </div>
+            <div class="principle-item">
+              <span>05</span>
+              <div><strong>服務以個案審核為準</strong><p>實際服務需經個案審核、資金來源確認及合規檢查。</p></div>
+            </div>
+          </div>
+          <a class="btn btn-ghost principle-btn" href="#submit-feedback">我也想提交評價</a>
+        </aside>
+
+        <div class="case-stack">
+          <article class="service-case-card glass-card blue-case">
+            <div class="case-avatar">☏</div>
+            <div class="case-content">
+              <p class="case-meta">匿名客戶 / 香港 / HK$10,000 以下</p>
+              <h2>首次到店諮詢，流程清晰安心</h2>
+              <div class="case-tags">
+                <span>服務類型：到店諮詢</span>
+                <span>溝通方式：面對面</span>
+                <span>案例日期：2026-07</span>
+              </div>
+              <p>第一次接觸線下加密貨幣服務，對流程有很多疑問。U站團隊先耐心說明每一步需要準備的資料，也提供合規提醒，整體體驗專業又安心。</p>
+            </div>
+            <div class="quote-mark">”</div>
+          </article>
+
+          <article class="service-case-card glass-card teal-case">
+            <div class="case-avatar">◎</div>
+            <div class="case-content">
+              <p class="case-meta">匿名客戶 / 海外 / HK$50,000 - HK$200,000</p>
+              <h2>跨境業務諮詢，文件指引專業</h2>
+              <div class="case-tags">
+                <span>服務類型：企業諮詢</span>
+                <span>溝通方式：WhatsApp</span>
+                <span>案例日期：2026-06</span>
+              </div>
+              <p>我們是海外公司，需要進行合規的資金輔助。U站提供了清晰的文件清單和合規建議，協助我們順利完成流程，溝通效率高，回覆即時。</p>
+            </div>
+            <div class="quote-mark">”</div>
+          </article>
+
+          <article class="service-case-card glass-card gold-case">
+            <div class="case-avatar">♢</div>
+            <div class="case-content">
+              <p class="case-meta">匿名客戶 / 香港 / HK$10,000 - HK$50,000</p>
+              <h2>面對面溝通更安心，服務值得信賴</h2>
+              <div class="case-tags">
+                <span>服務類型：幣幣交易</span>
+                <span>溝通方式：到店面談</span>
+                <span>案例日期：2026-06</span>
+              </div>
+              <p>我比較重視資金安全，所以選擇了面對面交易。U站的環境專業、流程透明，整個體驗讓我很放心，之後也會繼續使用他們的服務。</p>
+            </div>
+            <div class="quote-mark">”</div>
+          </article>
+        </div>
+      </div>
+
+      <div class="container" id="submit-feedback">
+        <section class="submit-panel glass-card">
+          <div class="submit-copy">
+            <p class="eyebrow">Submit Feedback</p>
+            <h2>提交客戶評價 / 案例補充</h2>
+            <p>您的分享有助於更多人了解我們的服務流程與專業態度。提交內容將會經過隱私處理後再進行展示，感謝支持！</p>
+            <div class="hero-actions submit-actions">
+              <a class="btn btn-primary" href="https://wa.me/85256332668?text=%E6%88%91%E6%83%B3%E6%8F%90%E4%BA%A4%20U%20Station%20%E5%AE%A2%E6%88%B6%E8%A9%95%E5%83%B9%EF%BC%9A%0A%E6%97%A5%E6%9C%9F%EF%BC%9A%0A%E5%8C%BF%E5%90%8D%2F%E6%9A%B1%E7%A8%B1%EF%BC%9A%0A%E5%9C%B0%E5%8D%80%EF%BC%9A%0A%E6%9C%8D%E5%8B%99%E9%A1%9E%E5%9E%8B%EF%BC%9A%0A%E9%87%91%E9%A1%8D%E5%8D%80%E9%96%93%EF%BC%9A%0A%E5%BF%83%E5%BE%97%E5%85%A7%E5%AE%B9%EF%BC%9A%0A%E6%98%AF%E5%90%A6%E5%90%8C%E6%84%8F%E5%8C%BF%E5%90%8D%E5%B1%95%E7%A4%BA%EF%BC%9A" target="_blank" rel="noopener">WhatsApp 提交評價</a>
+              <button class="btn btn-secondary copy-template-btn" type="button" data-copy-template="feedback">複製評價格式</button>
+            </div>
+          </div>
+          <div class="submit-qr-grid">
+            <div class="submit-qr"><strong>WhatsApp</strong><div class="qr-box small-qr"><img src="images/whatsapp-qr.png" alt="WhatsApp 二維碼"></div><span>即時對話，快速提交</span></div>
+            <div class="submit-qr"><strong>WeChat</strong><div class="qr-box small-qr"><img src="images/wechat-qr.png" alt="微信二維碼"></div><span>添加好友，提交評價</span></div>
+            <div class="submit-qr"><strong>Telegram</strong><div class="qr-box small-qr"><img src="images/telegram-qr.png" alt="Telegram 二維碼"></div><span>頻道聯絡，提交案例</span></div>
+          </div>
+          <pre id="feedback-template-text" class="hidden-template">日期：
+匿名/暱稱：
+地區：
+服務類型：
+金額區間：HKD 10萬以內 / HKD 10萬-50萬 / 企業諮詢
+心得內容：
+是否同意匿名展示：</pre>
+        </section>
+      </div>
+
+      <div class="container">
+        <article class="case-final-note">
+          <span>◇</span>
+          <p>本頁內容為經授權的客戶回饋或匿名化服務案例，僅供參考，不構成任何投資建議、收益保證或交易保證。實際服務需以個案審核、資金來源確認、報價及合規要求為準，U Station Crypto 保留最終決定權。</p>
         </article>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-row">
       <div><strong>U Station Crypto</strong><p>U站加密貨幣｜香港尖沙咀實體服務中心</p></div>
@@ -77,6 +176,6 @@
     </div>
     <div class="container copyright">© <span id="year"></span> U Station Crypto. All rights reserved.</div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js?v=10"></script>
 </body>
 </html>
