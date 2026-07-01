@@ -91,3 +91,21 @@ copyTemplateButtons.forEach((button) => {
     }
   });
 });
+
+// V12: generic copy template buttons
+const genericCopyButtons = document.querySelectorAll('[data-copy-target]');
+genericCopyButtons.forEach((button) => {
+  button.addEventListener('click', async () => {
+    const targetId = button.getAttribute('data-copy-target');
+    const template = document.getElementById(targetId)?.innerText || '';
+    if (!template) return;
+    try {
+      await navigator.clipboard.writeText(template);
+      const original = button.textContent;
+      button.textContent = '已複製格式';
+      setTimeout(() => { button.textContent = original; }, 1800);
+    } catch (error) {
+      alert('複製失敗，請手動選取格式文字。');
+    }
+  });
+});
